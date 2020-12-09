@@ -7,9 +7,11 @@ class NotesContainer extends React.Component {
     }
 
     render() {
+        let notes = this.apiResponse().map(obj=><Note note={obj}/>)
+        
         return (
             <ul>
-                {}
+                {notes}
             </ul>
         )
     }
